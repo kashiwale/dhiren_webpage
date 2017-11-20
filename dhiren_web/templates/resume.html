@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'dhiren/style.css' %}" />
+<title>Dhirendra</title>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<div class="w3-container">
+  <h2>Active Tabs</h2>
+  <p>To highlight the current tab/page the user is on, add a color class, and use JavaScript to update the active link.</p>
+
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="opensTab(event,'Me')">Me</button>
+    <button class="w3-bar-item w3-button tablink" onclick="opensTab(event,'Resume')">Resume</button>
+    <button class="w3-bar-item w3-button tablink" onclick="opensTab(event,'Video')">Video</button>
+	  <button class="w3-bar-item w3-button tablink" onclick="opensTab(event,'Awards')">Awards</button>
+  </div>
+  
+  <div id="Me" class="w3-container w3-border taab">
+	<p title="I'm a tooltip">
+	<h1>Yawaris</h1>
+	</p>  
+	<hr>
+	<h2 style="color:blue;font-family:verdana;">Dhirendra Singh Kashiwale</h2>
+	<h2 style="color:blue;">Cell: +1 856 571 9134</h2>
+
+	<hr>
+	<p><a href="http://www.w3schools.com">This is a link</a></p> 
+	<p><img src="https://en.gravatar.com/userimage/98009876/74989e54f301a7487b5c8627b6361c12.jpg" alt="W3Schools.com" ></p> 
+	<address>
+		Dhirendra Singh Kashiwale<br>
+		24 Iroquois Trail<br>
+		Branchburg<br>
+		NJ-08876<br>
+	</address>
+	<hr>
+	<p style="font-size:160%;text-align:center;background-color:#86FF33">ACADEMIC QUALIFICATION AND ACHIEVEMENTS<br>
+	<hr>
+	MTech., Digital Communications Engineering <br>
+	From: Maulana Azad National Institute of Technology Bhopal, MP, INDIA<br>
+	<hr>
+	B.Ssc(Eng)-5 year Degree Course., Electronics & Telecommunication Engineering<br>
+	From: National Institute of Technology, Kurukshetra, Haryana, INDIA<br>
+	<hr>
+	Machine Learning Course <br>
+	From : Stanford University
+	</p>
+	<p>SUMMARY</p>
+
+	<pre>
+	  Extensive experience and achievements in Software Development , Large Scale data Mining, Networking , Budget Planning ,Statistical Analysis, Opex Optimization ,  System Integration ,SLA enforcement and reconciliation.
+
+	Deep knowledge of Machine learning:
+
+	Multi Variable Linear Regression, <strong>Multi Class Logical Regression,</strong> <mark><b>Neural Network System Design using Back Propagation Algorithm,</b></mark> Machine Learning System Design and Diagnostics, Support Vector Machines (linear Kernel and Gaussian Kernel),Unsupervised Learning using PCA, Anomaly Detection using Multi variate Gaussian distribution, Large Data Machine learning using Stochastic Gradient Descent, Mini Batch Gradient Descent and MapReduce.
+
+	Extensive knowledge of Statistical Analysis:
+	Proficient in descriptive and inferential Statistics, Correlation & Multiple Regression (linear & logistic), ANOVA, Geodata analysis.
+
+	Skill set : Oracle(Manage Multiple databases), My SQL, Python, Pandas, numpy, matplotlib, scikit learn, Splunk, Big Data ,Spark,  R, Octave, Visual Basic, MapInfo ,QGIS, Tibco(Spotfire), eTree, Ruby on Rails, Django, Bootstrap, CSS, HTML, XML,UNIX Scripting, Excel.
+
+	Accountable for ensuring accuracy and schedule of customer SLA monitoring and Reports, MRC refund reconciliation for all Business Ethernet products .Coordinate with Business and operations for SLA reports to satisfy requirements from perspective of executive summary and customer experience. Ensure service monitoring schedules are aligned with product deployment. 
+
+	Accountable for definition of service quality KPIs. Responsible for design and development of analytical reports targeted for wide range of audiences like customers, executives, operation centers, customer care center and networking engineers for post portem analysis.
+
+	Develop and train resources to ensure unobstructed service monitoring. Develop working relationship with users.
+
+	Developed robust algorithms for budget optimization (saved $12 million Opex budget per year), Predictive algorithm for network capacity forecasting that helped in efficiently optimizing Capex Budget ($500 million) and enhance Service Quality. I have designed network and service Availability calculation algorithm to monitor availability of Complex network services. Developed SLA reconciliation analysis algorithm. Created capacity optimization tool for Strict QoS traffic.   Designed inventory update system optimized for a world class service provider. 
+
+	Managed complex programs, resource allocation, scheduling and tracking, defining platform requirements, producing functional and design specifications.
+	  
+		
+	</pre>
+
+	<table>
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th> 
+	    <th>Age</th>
+	  </tr>
+	  <tr>
+		<td>Jill</td>
+		<td>Smith</td>
+		<td>50</td>
+	  </tr>
+	  <tr>
+		<td>Eve</td>
+		<td>Jackson</td>
+		<td>94</td>
+	  </tr>
+	  <tr>
+		<td>John</td>
+		<td>Doe</td>
+		<td>80</td>
+	  </tr>
+	</table>
+	<br>
+
+	<table id="t01">
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th> 
+	    <th>Age</th>
+	  </tr>
+	  <tr>
+		<td>Jill</td>
+		<td>Smith</td>
+		<td>50</td>
+	  </tr>
+	  <tr>
+		<td>Eve</td>
+		<td>Jackson</td>
+		<td>94</td>
+	  </tr>
+	  <tr>
+		<td>John</td>
+		<td>Doe</td>
+		<td>80</td>
+	  </tr>
+	</table>
+
+  </div>
+
+	<div id="Resume" class="w3-container w3-border taab" style="display:none">
+	  <h2>Title: Principal Software Engineer <br>
+		Company: Comcast Business <br>
+		From: 03/2012 till date
+	  </h2>
+		<br>
+		<h3>Description:<br></h3>
+		<pre>The Comcast is a world leader in MetroE services. Product offerings are  layer 3 internet 
+		access services , Layer2 and layer 3 Cell backhaul , Metro Ethernet EPL, EVPL , ELAN, EoHFC services 
+		to business customers and Cellular operators. Product offering is having stringent SLA contracts for 
+		maintaining availability, packet loss, Delay and Jitter values. In order to enforce and comply with the
+		mentioned service performance SLA, service assurance group has taken the initiative of 
+		implementing processes of proactive monitoring of customer services, customer Notification etc.</pre>
+	</div>
+
+  <div id="Video" class="w3-container w3-border taab" style="display:none">
+  	<iframe width="640" height="360"
+  	src="https://www.youtube.com/embed/NJ5gGK_nYh8?autoplay=0">
+  	</iframe>
+  </div>
+
+  <div id="Awards" class="w3-container w3-border taab" style="display:none">
+	<h2>Awards</h2>
+  </div>
+
+<script>
+function opensTab(evt, taabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("taab");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(taabName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+</body>
+</html>

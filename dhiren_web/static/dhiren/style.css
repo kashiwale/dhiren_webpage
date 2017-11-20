@@ -1,0 +1,45 @@
+h1 {
+    color:yellow;
+    text-align:center;
+}
+
+h2 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+    border: 1px solid powderblue;
+}
+p  {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+}
+#p01 {
+    color: blue;
+}
+
+error {
+    color: red;
+}
+
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table #t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table #t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table #t01 th {
+    background-color: black;
+    color: white;
+}
